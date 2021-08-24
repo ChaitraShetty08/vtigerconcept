@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34986" started-at="2021-08-19T07:41:31Z" finished-at="2021-08-19T07:42:06Z">
+  <suite name="Default suite" duration-ms="35210" started-at="2021-08-23T11:05:32Z" finished-at="2021-08-23T11:06:07Z">
     <groups>
       <group name="Regression test">
-        <method signature="TC12.testCase12()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="testCase12" class="vtigerTestCases.TC12"/>
+        <method signature="TC10.testCase10()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="testCase10" class="vtigerTestCases.TC10"/>
       </group> <!-- Regression test -->
     </groups>
-    <test name="Default test" duration-ms="34986" started-at="2021-08-19T07:41:31Z" finished-at="2021-08-19T07:42:06Z">
-      <class name="vtigerTestCases.TC12">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="launchBrowser" is-config="true" duration-ms="1540" started-at="2021-08-19T13:11:31Z" finished-at="2021-08-19T13:11:33Z">
+    <test name="Default test" duration-ms="35210" started-at="2021-08-23T11:05:32Z" finished-at="2021-08-23T11:06:07Z">
+      <class name="vtigerTestCases.TC10">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="launchBrowser" is-config="true" duration-ms="1599" started-at="2021-08-23T16:35:32Z" finished-at="2021-08-23T16:35:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="logintoVtiger" is-config="true" duration-ms="2393" started-at="2021-08-19T13:11:33Z" finished-at="2021-08-19T13:11:35Z">
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="logintoVtiger" is-config="true" duration-ms="2587" started-at="2021-08-23T16:35:33Z" finished-at="2021-08-23T16:35:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintoVtiger -->
-        <test-method status="PASS" signature="testCase12()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="testCase12" duration-ms="29203" started-at="2021-08-19T13:11:35Z" finished-at="2021-08-19T13:12:04Z">
+        <test-method status="PASS" signature="testCase10()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="testCase10" duration-ms="29101" started-at="2021-08-23T16:35:36Z" finished-at="2021-08-23T16:36:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase12 -->
-        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="logoutVtiger" is-config="true" duration-ms="1767" started-at="2021-08-19T13:12:04Z" finished-at="2021-08-19T13:12:06Z">
+        </test-method> <!-- testCase10 -->
+        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="logoutVtiger" is-config="true" duration-ms="1836" started-at="2021-08-23T16:36:05Z" finished-at="2021-08-23T16:36:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutVtiger -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:vtigerTestCases.TC12@3159c4b8]" name="closeBrowser" is-config="true" duration-ms="66" started-at="2021-08-19T13:12:06Z" finished-at="2021-08-19T13:12:06Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:vtigerTestCases.TC10@6536e911]" name="closeBrowser" is-config="true" duration-ms="72" started-at="2021-08-23T16:36:07Z" finished-at="2021-08-23T16:36:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- vtigerTestCases.TC12 -->
+      </class> <!-- vtigerTestCases.TC10 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

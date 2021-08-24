@@ -3,13 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="dataProvider.Data_Provider"/>
       <class name="vtigerTestCases.TC11"/>
       <class name="vtigerTestCases.TC10"/>
-      <class name="windowHandle.Handling_Windows"/>
-      <class name="dataProvider.Dataprovider_Excel"/>
-      <class name="createorg.CreateOrg"/>
-      <class name="dataProvider.Dataprovider_Makemytrip"/>
       <class name="vtigerTestCases.TC15"/>
       <class name="vtigerTestCases.TC14"/>
       <class name="vtigerTestCases.TC13"/>

@@ -12,7 +12,7 @@ import generic_script.BaseClass;
 public class TC12 extends BaseClass
 {
 
-	@Test(groups="Regression test")
+	@Test(groups="Regressiontest")
 	public void testCase12() throws IOException, InterruptedException
 	{
 		

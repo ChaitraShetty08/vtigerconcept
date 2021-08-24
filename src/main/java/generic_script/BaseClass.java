@@ -9,7 +9,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
 import com.objectrepo.HomePage;
 import com.objectrepo.Loginpage;
@@ -22,17 +21,18 @@ public class BaseClass
 	public Loginpage lp=new Loginpage(d);
 	public JavaUtilities r=new JavaUtilities();
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	
-	@BeforeClass(groups={"Regression test"})
-	public void launchBrowser(String BROSWER) throws IOException
+	@BeforeClass(groups={"Regressiontest"})
+	public void launchBrowser() throws IOException
 	{
+		String BROWSER=System.getProperty("browser");
 		//String BROSWER = p.readData("browser");
-		if (BROSWER.equals("chrome")) 
+		if (BROWSER.equals("chrome")) 
 		{
 			d=new ChromeDriver();	
 		} 
-		else if (BROSWER.equals("firefox"))
+		else if (BROWSER.equals("firefox"))
 		{
 			d=new FirefoxDriver();
 		}
@@ -44,10 +44,12 @@ public class BaseClass
 
 	}
 
-	@BeforeMethod(groups={"Regression test","Smoke test"})
+	@BeforeMethod(groups={"Regressiontest","Smoketest"})
 	public void logintoVtiger() throws IOException
 	{
-		d.get(p.readData("url"));
+		String URL=System.getProperty("url");
+		d.get(URL);
+		//d.get(p.readData("url"));
 		webu.implicityWait(d);
 		webu.maximizeWindow(d);
 
