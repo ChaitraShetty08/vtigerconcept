@@ -34,7 +34,7 @@ public class MMT_Calender
 				String currentdate = arr[2];
 				String year = arr[5];
 				String MMT_date = day+" "+month+" "+currentdate+" "+year;
-				
+				System.out.println(MMT_date);
 				Actions actions=new Actions(d);
 				actions.moveByOffset(10, 10).click().perform();
 				
