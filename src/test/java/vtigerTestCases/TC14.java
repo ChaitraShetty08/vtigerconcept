@@ -14,7 +14,7 @@ public class TC14 extends BaseClass
 	@Test
 	public void testCase14() throws IOException, InterruptedException
 	{
-		System.out.println("Hello");
+		
 		HomePage hp=new HomePage(d);
 		hp.moreLinkInHomePage(d);
 
