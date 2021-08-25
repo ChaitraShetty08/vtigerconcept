@@ -48,9 +48,9 @@ public class BaseClass
 	@BeforeMethod(groups={"Regressiontest","Smoketest"})
 	public void logintoVtiger() throws IOException
 	{
-		String URL=System.getProperty("url");
-		d.get(URL);
-		//d.get(p.readData("url"));
+		//String URL=System.getProperty("url");
+		//d.get(URL);
+		d.get(p.readData("url"));
 		webu.implicityWait(d);
 		webu.maximizeWindow(d);
 
