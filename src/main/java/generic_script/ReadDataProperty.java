@@ -9,9 +9,9 @@ public class ReadDataProperty {
 	public String readData(String key) throws IOException 
 	{
 FileInputStream	fis=new FileInputStream("../vtigerconcept/CommonData.propeties");
-Properties propfile=new Properties();
-propfile.load(fis);
-String value = propfile.getProperty(key);
+Properties p=new Properties();
+p.load(fis);
+String value = p.getProperty(key);
 
 return value;
 
