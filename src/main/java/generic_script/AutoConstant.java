@@ -5,7 +5,7 @@ public interface AutoConstant
 	public static String DirPath=System.getProperty("user.dir");
 	
 	
-	String p=DirPath+"../CommonData.propeties";
+	String p=DirPath+"../vtigerconcept/CommonData.propeties";
 	String JSONfilepath="";
 	String XMLfilepath="";
 	String Excelpath="";
