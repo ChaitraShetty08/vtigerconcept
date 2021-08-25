@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.objectrepo.HomePage;
 import com.objectrepo.Loginpage;
@@ -21,13 +22,13 @@ public class BaseClass
 	public Loginpage lp=new Loginpage(d);
 	public JavaUtilities r=new JavaUtilities();
 
-	//@Parameters("BROWSER")
+	@Parameters("BROWSER")
 	
 	@BeforeClass(groups={"Regressiontest"})
 	public void launchBrowser() throws IOException
 	{
-		String BROWSER=System.getProperty("browser");
-		//String BROSWER = p.readData("browser");
+		//String BROWSER=System.getProperty("browser");
+		String BROWSER = p.readData("browser");
 		if (BROWSER.equals("chrome")) 
 		{
 			d=new ChromeDriver();	
