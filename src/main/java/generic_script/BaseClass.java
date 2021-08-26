@@ -54,7 +54,7 @@ public class BaseClass
 		webu.maximizeWindow(d);
 
 		Loginpage lp=new Loginpage(d);
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		lp.loginAppElements(p.readData("UN"), p.readData("PWD"));
 
 	}

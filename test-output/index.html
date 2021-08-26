@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  5 skipped,  </span>
+                    <span class="method-stats">7 methods, 1 failed,  5 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -116,7 +116,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC10" hash-for-method="testCase10">testCase10</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC10" hash-for-method="testCase11">testCase11</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,15 +131,29 @@
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC14" hash-for-method="testCase14">testCase14</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC15" hash-for-method="testCase14">testCase14</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC15" hash-for-method="testCase14">testCase14</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC14" hash-for-method="testCase14">testCase14</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="vtigerTestCases.TC10" hash-for-method="testCase10">testCase10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -162,30 +176,26 @@
                   <a name="testCase11">
                   </a> <!-- testCase11 -->
                   <span class="method-name">testCase11</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=92.0.4515.159)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-R17B62S&apos;, ip: &apos;192.168.72.79&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\CHAITR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e449257148ea67070e2bc9379fb33184
-*** Element info: {Using=xpath, value=//img[@title=&apos;Create Sales Order...&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\CHAITR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57442}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 949bbc3b784a3674650319262d01be84
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at vtigerTestCases.TC11.testCase11(TC11.java:23)
-... Removed 29 stack frames
+	at com.objectrepo.HomePage.moreLinkInHomePage(HomePage.java:90)
+	at vtigerTestCases.TC11.testCase11(TC11.java:20)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -259,13 +269,28 @@ Session ID: e449257148ea67070e2bc9379fb33184
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testCase11">
+                  </a> <!-- testCase11 -->
+                  <span class="method-name">testCase11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vtigerTestCases.TC10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
                   <a name="testCase10">
                   </a> <!-- testCase10 -->
                   <span class="method-name">testCase10</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -314,12 +339,24 @@ Session ID: e449257148ea67070e2bc9379fb33184
                 <span class="method-in-group-name">testCase10</span>
                 <br/>
               </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">testCase11</span>
                 <br/>
               </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoketest</span>
+              <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">testCase12</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCase14</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -339,36 +376,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase11')
-data.setCell(0, 2, 'vtigerTestCases.TC11')
-data.setCell(0, 3, 1046);
+data.setCell(0, 1, 'testCase10')
+data.setCell(0, 2, 'vtigerTestCases.TC10')
+data.setCell(0, 3, 29155);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase10')
-data.setCell(1, 2, 'vtigerTestCases.TC10')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'testCase11')
+data.setCell(1, 2, 'vtigerTestCases.TC11')
+data.setCell(1, 3, 10148);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCase14')
-data.setCell(2, 2, 'vtigerTestCases.TC14')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'testCase11')
+data.setCell(2, 2, 'vtigerTestCases.TC10')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCase13')
-data.setCell(3, 2, 'vtigerTestCases.TC13')
+data.setCell(3, 1, 'testCase14')
+data.setCell(3, 2, 'vtigerTestCases.TC15')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCase14')
-data.setCell(4, 2, 'vtigerTestCases.TC15')
+data.setCell(4, 1, 'testCase12')
+data.setCell(4, 2, 'vtigerTestCases.TC12')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCase12')
-data.setCell(5, 2, 'vtigerTestCases.TC12')
+data.setCell(5, 1, 'testCase14')
+data.setCell(5, 2, 'vtigerTestCases.TC14')
 data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCase13')
+data.setCell(6, 2, 'vtigerTestCases.TC13')
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -401,54 +442,78 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">logintoVtiger</span>
-                <span class="method-start">1779 ms</span>
+                <span class="method-start">1728 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCase11</span>
-                <span class="method-start">4599 ms</span>
+                <span class="method-start">12132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logoutVtiger</span>
-                <span class="method-start">5654 ms</span>
+                <span class="method-start">22280 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23042 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vtigerTestCases.TC10</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">23103 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">logintoVtiger</span>
+                <span class="method-start">24149 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCase10</span>
-                <span class="method-start">5667 ms</span>
+                <span class="method-start">34519 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vtigerTestCases.TC15</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutVtiger</span>
+                <span class="method-start">63674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintoVtiger</span>
+                <span class="method-start">65526 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCase14</span>
-                <span class="method-start">5671 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vtigerTestCases.TC14</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testCase14</span>
-                <span class="method-start">5675 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">vtigerTestCases.TC13</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testCase13</span>
-                <span class="method-start">5679 ms</span>
+                <span class="method-name">testCase11</span>
+                <span class="method-start">85384 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">vtigerTestCases.TC12</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCase12</span>
-                <span class="method-start">5682 ms</span>
+                <span class="method-start">85384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vtigerTestCases.TC13</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCase13</span>
+                <span class="method-start">85384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vtigerTestCases.TC15</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCase14</span>
+                <span class="method-start">85384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vtigerTestCases.TC14</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCase14</span>
+                <span class="method-start">85384 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

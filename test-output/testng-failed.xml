@@ -25,13 +25,17 @@
       </class> <!-- vtigerTestCases.TC15 -->
       <class name="vtigerTestCases.TC10">
         <methods>
-          <include name="testCase10"/>
+          <include name="logoutVtiger"/>
+          <include name="testCase11"/>
+          <include name="launchBrowser"/>
+          <include name="logintoVtiger"/>
         </methods>
       </class> <!-- vtigerTestCases.TC10 -->
       <class name="vtigerTestCases.TC11">
         <methods>
           <include name="logoutVtiger"/>
           <include name="testCase11"/>
+          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
           <include name="logintoVtiger"/>
         </methods>
