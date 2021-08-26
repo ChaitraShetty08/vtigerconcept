@@ -45,7 +45,7 @@ public class BaseClass
 	}
 
 	@BeforeMethod(groups={"Regressiontest","Smoketest"})
-	public void logintoVtiger() throws IOException
+	public void logintoVtiger() throws IOException, InterruptedException
 	{
 		//String URL=System.getProperty("url");
 		//d.get(URL);
@@ -54,6 +54,7 @@ public class BaseClass
 		webu.maximizeWindow(d);
 
 		Loginpage lp=new Loginpage(d);
+		Thread.sleep(3000);
 		lp.loginAppElements(p.readData("UN"), p.readData("PWD"));
 
 	}
