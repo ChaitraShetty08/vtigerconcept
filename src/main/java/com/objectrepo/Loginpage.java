@@ -8,46 +8,46 @@ import org.openqa.selenium.support.PageFactory;
 public class Loginpage 
 {
 	WebDriver driver;
-public Loginpage(WebDriver driver)
-{
-	PageFactory.initElements(driver, Loginpage.this);
-}
+	public Loginpage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, Loginpage.this);
+	}
 
-@FindBy(xpath="//input[@name='user_name']")
-private WebElement username;
+	@FindBy(xpath="//input[@name='user_name']")
+	private WebElement username;
 
-public WebElement getUsername() 
-{
-	return username;
-}
+	public WebElement getUsername() 
+	{
+		return username;
+	}
 
-@FindBy(xpath="//input[@name='user_password']")
-private WebElement password;
+	@FindBy(xpath="//input[@name='user_password']")
+	private WebElement password;
 
-public WebElement getPassword() 
-{
-	return password;
-}
+	public WebElement getPassword() 
+	{
+		return password;
+	}
 
-@FindBy(xpath="//input[@type='submit']")
-private WebElement loginbtn;
+	@FindBy(xpath="//input[@type='submit']")
+	private WebElement loginbtn;
 
-public WebElement getLoginbtn() {
-	return loginbtn;
-}
+	public WebElement getLoginbtn() {
+		return loginbtn;
+	}
 
-public void loginApp()
-{
-	getUsername().sendKeys("admin");
-	getPassword().sendKeys("admin");
-	getLoginbtn().clear();
-}
-public void loginAppElements(String username, String password)
-{
-	getUsername().sendKeys(username);
-	getPassword().sendKeys(password);
-	getLoginbtn().click();
-	
-}
+	public void loginApp()
+	{
+		getUsername().sendKeys("admin");
+		getPassword().sendKeys("admin");
+		getLoginbtn().clear();
+	}
+	public void loginAppElements(String username, String password)
+	{
+		getUsername().sendKeys(username);
+		getPassword().sendKeys(password);
+		getLoginbtn().click();
+
+	}
 }
 
