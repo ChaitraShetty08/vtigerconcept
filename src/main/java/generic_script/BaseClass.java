@@ -23,7 +23,7 @@ public class BaseClass
 
 	//@Parameters("BROWSER")
 	
-	@BeforeClass(groups={"Regressiontest"})
+	@BeforeClass(groups={"Regressiontest","Smoketest"})
 	public void launchBrowser() throws IOException
 	{
 		//String BROWSER=System.getProperty("browser");
