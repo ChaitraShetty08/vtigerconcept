@@ -11,7 +11,7 @@ import generic_script.BaseClass;
 
 public class TC14 extends BaseClass
 {
-	@Test
+	@Test(groups="Smoketest")
 	public void testCase14() throws IOException, InterruptedException
 	{
 		
