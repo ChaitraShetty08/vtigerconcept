@@ -2,6 +2,7 @@ package vtigerTestCases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.objectrepo.CreateSalesOrderPage;
@@ -9,14 +10,13 @@ import com.objectrepo.HomePage;
 
 import generic_script.BaseClass;
 
+
 public class ScriptWithBaseClass extends BaseClass
-
 {
-
 	@Test
 	public void createSales() throws InterruptedException, IOException
-	
-	{
+		{
+		
 		
 		HomePage hp=new HomePage(d);
 		hp.moreLinkInHomePage(d);
@@ -61,9 +61,6 @@ public class ScriptWithBaseClass extends BaseClass
 		Thread.sleep(3000);
 		//sales.getSavebtn().click();
 		
-		
+		Assert.assertEquals(false, true);
 	}
-	
-	
-	
 }
