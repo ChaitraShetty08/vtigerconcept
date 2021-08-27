@@ -9,7 +9,7 @@ public interface AutoConstant
 	String JSONfilepath="";
 	String XMLfilepath="";
 	String Excelpath="";
-	String ExtentReportPath="ExtentReport_19";
+	String ExtentReportPath="ExtentReport_19\\reports22";
 	
 
 	int implictwait=10;

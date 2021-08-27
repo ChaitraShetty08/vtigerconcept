@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generic_script.Listeners"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="vtigerTestCases.TC14">
-        <methods>
-          <include name="testCase14"/>
-        </methods>
-      </class> <!-- vtigerTestCases.TC14 -->
-      <class name="vtigerTestCases.TC12">
-        <methods>
-          <include name="testCase12"/>
-        </methods>
-      </class> <!-- vtigerTestCases.TC12 -->
       <class name="vtigerTestCases.TC13">
         <methods>
           <include name="testCase13"/>
@@ -23,23 +16,33 @@
           <include name="testCase14"/>
         </methods>
       </class> <!-- vtigerTestCases.TC15 -->
-      <class name="vtigerTestCases.TC10">
-        <methods>
-          <include name="logoutVtiger"/>
-          <include name="testCase11"/>
-          <include name="launchBrowser"/>
-          <include name="logintoVtiger"/>
-        </methods>
-      </class> <!-- vtigerTestCases.TC10 -->
       <class name="vtigerTestCases.TC11">
         <methods>
           <include name="logoutVtiger"/>
-          <include name="testCase11"/>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
           <include name="logintoVtiger"/>
         </methods>
       </class> <!-- vtigerTestCases.TC11 -->
+      <class name="vtigerTestCases.TC10">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="testCase10"/>
+          <include name="testCase11"/>
+          <include name="launchBrowser"/>
+          <include name="logintoVtiger"/>
+        </methods>
+      </class> <!-- vtigerTestCases.TC10 -->
+      <class name="vtigerTestCases.TC12">
+        <methods>
+          <include name="testCase12"/>
+        </methods>
+      </class> <!-- vtigerTestCases.TC12 -->
+      <class name="vtigerTestCases.TC14">
+        <methods>
+          <include name="testCase14"/>
+        </methods>
+      </class> <!-- vtigerTestCases.TC14 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
