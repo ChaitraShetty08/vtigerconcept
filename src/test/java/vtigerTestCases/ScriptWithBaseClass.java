@@ -13,7 +13,7 @@ import generic_script.BaseClass;
 
 public class ScriptWithBaseClass extends BaseClass
 {
-	@Test
+	@Test(groups="Regressiontest", retryAnalyzer=generic_script.RetryAnalyzer.class)
 	public void createSales() throws InterruptedException, IOException
 		{
 		
