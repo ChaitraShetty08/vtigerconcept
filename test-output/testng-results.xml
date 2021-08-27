@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7959" started-at="2021-08-27T11:29:01Z" finished-at="2021-08-27T11:29:09Z">
+  <suite name="Default suite" duration-ms="37793" started-at="2021-08-27T12:11:11Z" finished-at="2021-08-27T12:11:49Z">
     <groups>
+      <group name="Regressiontest">
+        <method signature="ScriptWithBaseClass.createSales()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="createSales" class="vtigerTestCases.ScriptWithBaseClass"/>
+      </group> <!-- Regressiontest -->
     </groups>
-    <test name="Default test" duration-ms="7959" started-at="2021-08-27T11:29:01Z" finished-at="2021-08-27T11:29:09Z">
-      <class name="generic_script.Extent">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:generic_script.Extent@4b8729ff]" name="setUp" is-config="true" duration-ms="102" started-at="2021-08-27T16:59:01Z" finished-at="2021-08-27T16:59:01Z">
+    <test name="Default test" duration-ms="37793" started-at="2021-08-27T12:11:11Z" finished-at="2021-08-27T12:11:49Z">
+      <class name="vtigerTestCases.ScriptWithBaseClass">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="launchBrowser" is-config="true" duration-ms="1595" started-at="2021-08-27T17:41:11Z" finished-at="2021-08-27T17:41:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:generic_script.Extent@4b8729ff]" name="test1" duration-ms="3078" started-at="2021-08-27T16:59:01Z" finished-at="2021-08-27T16:59:04Z">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="logintoVtiger()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="logintoVtiger" is-config="true" duration-ms="5253" started-at="2021-08-27T17:41:13Z" finished-at="2021-08-27T17:41:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:generic_script.Extent@4b8729ff]" name="test2" duration-ms="4869" started-at="2021-08-27T16:59:04Z" finished-at="2021-08-27T16:59:09Z">
+        </test-method> <!-- logintoVtiger -->
+        <test-method status="PASS" signature="createSales()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="createSales" duration-ms="29142" started-at="2021-08-27T17:41:18Z" finished-at="2021-08-27T17:41:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:generic_script.Extent@4b8729ff]" name="close" is-config="true" duration-ms="160" started-at="2021-08-27T16:59:09Z" finished-at="2021-08-27T16:59:09Z">
+        </test-method> <!-- createSales -->
+        <test-method status="PASS" signature="logoutVtiger()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="logoutVtiger" is-config="true" duration-ms="1705" started-at="2021-08-27T17:41:47Z" finished-at="2021-08-27T17:41:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- generic_script.Extent -->
+        </test-method> <!-- logoutVtiger -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:vtigerTestCases.ScriptWithBaseClass@6325a3ee]" name="closeBrowser" is-config="true" duration-ms="65" started-at="2021-08-27T17:41:49Z" finished-at="2021-08-27T17:41:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- vtigerTestCases.ScriptWithBaseClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

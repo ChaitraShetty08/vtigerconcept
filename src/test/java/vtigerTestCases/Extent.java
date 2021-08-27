@@ -1,4 +1,4 @@
-package generic_script;
+package vtigerTestCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,11 +11,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import generic_script.AutoConstant;
+
 public class Extent 
 {
 
 	WebDriver d=new ChromeDriver();
-	ExtentHtmlReporter reporter; //This is used to set the path and give set some configuration.
+	ExtentHtmlReporter reporter; //This is used to set the path and give set some configuration Or 
+														//to give the path of report and we can make change to look and feel of the report
 	ExtentReports reports; //This is used to attach the report for the test script execution.
 	ExtentTest test; // This is used to create the entries.
 

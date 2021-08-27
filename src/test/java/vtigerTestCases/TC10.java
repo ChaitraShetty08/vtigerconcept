@@ -2,6 +2,7 @@ package vtigerTestCases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.objectrepo.CreateSalesOrderPage;
@@ -51,7 +52,7 @@ public class TC10 extends BaseClass
 		webu.scrollTo(d, sales.getItemnamelookupimg());
 		sales.getItemnamelookupimg().click();
 		Thread.sleep(3000);
-
+		Assert.assertEquals(false, true);
 		webu.switchwindow(d, "Products&action");
 		sales.getProductnamelink().click();
 		Thread.sleep(3000);

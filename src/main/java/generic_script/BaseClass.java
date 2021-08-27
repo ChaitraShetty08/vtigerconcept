@@ -61,7 +61,7 @@ public class BaseClass
 		staticd=d;
 
 		Loginpage lp=new Loginpage(d);
-
+		Thread.sleep(3000);
 		lp.loginAppElements(p.readData("UN"), p.readData("PWD"));
 
 	}

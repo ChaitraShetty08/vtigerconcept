@@ -20,7 +20,7 @@ public class TC14 extends BaseClass
 
 		CreateSalesOrderPage sales=new CreateSalesOrderPage(d);
 		sales.getCreatesalesbtn().click();
-		sales.getSubjecttxtfld().sendKeys("Samsungj7"); 	
+		sales.getSubjecttxtfld().sendKeys("Samsungj7"+r.randomNo()); 	
 		sales.getOrgimgbtn().click();
 		webu.switchwindow(d, "Accounts&action");
 		sales.getSearchordnametxtfld().sendKeys("Samsung");
