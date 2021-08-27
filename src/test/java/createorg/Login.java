@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Login 
 {
@@ -19,6 +20,13 @@ public static void main(String[] args)
 	d.findElement(By.xpath("//input[@name='user_name']")).sendKeys("admin");
 	d.findElement(By.xpath("//input[@name='user_password']")).sendKeys("admin");
 d.findElement(By.xpath("//input[@type='submit']")).click();
+
+String expected = d.findElement(By.xpath("//a[@class='hdrLink']")).getText();
+String actual = "Home";
+
+Assert.assertEquals(actual, expected);
+
+
 	
 	
 	

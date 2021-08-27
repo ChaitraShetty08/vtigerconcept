@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="vtigerTestCases.ScriptWithBaseClass">
+      <class name="generic_script.Extent">
         <methods>
-          <include name="logoutVtiger"/>
-          <include name="createSales"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="logintoVtiger"/>
+          <include name="test2"/>
+          <include name="setUp"/>
+          <include name="close"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- vtigerTestCases.ScriptWithBaseClass -->
+      </class> <!-- generic_script.Extent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
